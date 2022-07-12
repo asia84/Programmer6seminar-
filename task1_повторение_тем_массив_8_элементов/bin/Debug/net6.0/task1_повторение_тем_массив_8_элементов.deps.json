@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "task1_повторение_тем_массив_8_элементов/1.0.0": {
+        "runtime": {
+          "task1_повторение_тем_массив_8_элементов.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "task1_повторение_тем_массив_8_элементов/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

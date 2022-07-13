@@ -3,7 +3,7 @@
 (последний элемент будет на первом месте, а первый - на последнем и т.д.)
 [1 2 3 4 5] -> [5 4 3 2 1]
 [6 7 3 6] -> [6 3 7 6]
-*//*
+*//*через функцию поворот
 int[] f(int[] array)//возвращаем массив[] принимаем ед.аргумент,тот же массив, который случайным образом сгенерировался
 {
     for (int i = 0; i < array.Length/2;i++)//проходимся по нему до середины
@@ -32,31 +32,32 @@ Console.WriteLine("["+ string.Join(", ", f(array)) + "]");// вызываем с
 
 
 
+//через вспомогательную переменную
 
 int[] f(int[] array)//возвращаем массив[] принимаем ед.аргумент,тот же массив, который случайным образом сгенерировался
 {
-    int x;
+    int x;//вспомогательная переменная
     for (int i = 0; i < array.Length/2; i++)//проходимся по нему до середины
     {
         x = array[i];
         array[i] = array[array.Length - (i + 1)];
         array[array.Length-(i + 1)] = x;
     }                                                                                                    //  1 -> n-2
-    return array;     //Возвращаем   массив                                                              //  2 -> n-3  и тд до n/2
+    return array;     //Возвращаем   массив уже перевернутый                                             //  2 -> n-3  и тд до n/2
 }
 
 
 Console.WriteLine("Введи количество элементов в массиве: ");
-int n = Convert.ToInt32(Console.ReadLine());
-int[] array = new int[n];
-var random = new Random();             //массив сгенерирован
+int n = Convert.ToInt32(Console.ReadLine());//ввели длину массива
+int[] array = new int[n];// обозначили на какое количество элементов будет массив
+var random = new Random();             //массив сгенерирован случайным образом
 for(int i = 0; i < array.Length; i++)
 {
     
     array[i] =  random.Next(100, 999);
 }
 Console.WriteLine("Наш массив: ");
-Console.WriteLine("["+ string.Join(", ", array) + "]");
+Console.WriteLine("["+ string.Join(", ", array) + "]");//указываем какой изначальный массив
 Console.WriteLine("["+ string.Join(", ", f(array)) + "]");// вызываем свою функцию и передаю туда массив, а она уже 
                                                           // вместо обыкновенного массива, вставляет перевернутый и выводим
 

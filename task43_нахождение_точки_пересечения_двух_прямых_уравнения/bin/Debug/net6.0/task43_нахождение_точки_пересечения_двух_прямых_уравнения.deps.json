@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "task43_нахождение_точки_пересечения_двух_прямых_уравнения/1.0.0": {
+        "runtime": {
+          "task43_нахождение_точки_пересечения_двух_прямых_уравнения.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "task43_нахождение_точки_пересечения_двух_прямых_уравнения/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

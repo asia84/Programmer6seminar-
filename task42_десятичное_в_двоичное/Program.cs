@@ -40,7 +40,7 @@ x = n % 2;
 array.Add(x);
 count++;
 //Console.Write(x);
-n /= 2;
+n /= 2;// n = n / 2
 }
 for (int i = count - 1; i >= 0; i--)
 {
